@@ -33,7 +33,7 @@
   "scripts": {
     "test": "jest --watchAll --coverage",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run dev",
     "demo": "npm run dev",
     "build-demo": "npm run build",
     "prepare": "npm run build",
