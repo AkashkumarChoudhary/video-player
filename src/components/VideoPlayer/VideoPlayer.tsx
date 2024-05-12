@@ -13,7 +13,7 @@ import classNames from "classnames";
 import { concatPrefixCls } from "./../../utils/concatPrefixCls";
 import { getAllowedControlBarItems } from "./../../utils/getAllowedControlBarItems";
 import { getVideoSrc } from "./../../utils/getVideoSrc";
-import Speed from "../Speed";
+// import Speed from "../Speed";
 
 const ASPECT_RATIO = 16 / 9;
 
@@ -162,12 +162,12 @@ const InternalVideoPlayer: React.ForwardRefRenderFunction<
     }
   };
 
-  const handleSpeedUpdate = (newSpeed: number) => {
-    setVideoState((prev) => ({
-      ...prev,
-      speed: newSpeed,
-    }))
-  };
+  // const handleSpeedUpdate = (newSpeed: number) => {
+  //   setVideoState((prev) => ({
+  //     ...prev,
+  //     speed: newSpeed,
+  //   }))
+  // };
 
   const handleTimeUpdate = () => {
     if (currentVideoRef.current) {
