@@ -40,10 +40,10 @@ const Wrapper: React.ForwardRefRenderFunction<HTMLDivElement, WrapperProps> = (
     [`${prefixCls}-400`]: width <= 400,
   });
 
-  let timeoutId: NodeJS.Timeout | null = null;
+  let timeoutId: number | null = null;
 
   const manageMenuPreview = () => {
-    timeoutId = setInterval(() => {
+    timeoutId = window.setInterval(() => {
       if (playing && !forceCancel) setHide(true);
     }, 5000);
 
