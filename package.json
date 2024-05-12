@@ -47,6 +47,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@types/react": "^18.3.1",
+    "@vitejs/plugin-react": "4.0.0",
     "classes": "^0.3.0",
     "classnames": "^2.5.1",
     "husky": "^8.0.3",
